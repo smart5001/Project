@@ -11,6 +11,8 @@ public class DataBase
 	public static void setUserId(String userId) {
 		UserId = userId;
 	}
+	public static void setProfileId(String profileId) {
+		ProfileId = ProfileId;
 	 static String getPassword() {
 		return Password;
 	}
@@ -60,7 +62,10 @@ public class DataBase
 		String[][] p1 =  new String[10][3];
 		p1[0] = new String[] {"P002","10000","Semester 4 Hostel Fee"};
 		p1[1] = new String[] {"P003","49888","Semester 4 Refundable Deposit"};
-		UserPendingFeesMap.put("student", p1);
+		UserPendingFeesMap.put("student", p2);
+		p1[0] = new String[] {"P002","10000","Semester 4 Hostel Fee"};
+		p1[1] = new String[] {"P003","49888","Semester 4 Refundable Deposit"};
+		UserPendingFeesMap.put("student", p2);
 	}
 	public static  void addStudentUserMap(String id, String password)
 	{
