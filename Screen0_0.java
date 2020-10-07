@@ -25,7 +25,7 @@ public JLabel photo;
 		 paneldesign();
 		 f.add(p);
 		 f.setSize(420,200);
-		 f.setVisible(true);
+		 f.setVisible(false);
 		 f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		 Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 		 int w = f.getSize().width;
@@ -82,11 +82,12 @@ public JLabel photo;
 	{
 		try
 		{
+			{
 			new Screen0_0();
 			//DataBase.addStudentUserMap("Vardhan", "123456");
 		}catch(Exception e)
 		{
-			System.out.println(e);
+			System.out.println(err);
 		}
 	      JFrame.setDefaultLookAndFeelDecorated(true);
 		}
